@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
+
+.welcome{
+    position: relative;
+    height: calc(100vh);
+}
+
+.font{
+    font-family: 'Edu QLD Beginner', cursive;
+    font-size: 100px;
+}
+
+.about{
+    font-size: 50px;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight: 300;
+}
+
+.center{
+    display: inline-block;
+    height: 50%;
+    transform: translateY(50%);
+
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    .font{
+        font-family: 'Edu QLD Beginner', cursive;
+        font-size: 34px;
+    }
+    .about{
+        font-size: 30px;
+    }
+}

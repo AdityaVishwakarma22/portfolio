@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
+
+.section{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#heading{
+    font-size: 190px;
+    color: rgba(189, 220, 221, 0.504);
+    font-weight: 500;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+
+.about-desc{
+    font-size: 40px;
+    top:80px;
+    left:100px;
+    position: absolute;
+}
+
+.heading{
+    font-size: 90px;
+    color: rgb(189, 220, 221);
+    font-weight: 500;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+
+.all-stacks{
+    display: flex;
+}
+
+h4{
+    font-size: 40px;
+    margin: 10px 0px;
+}
+
+.all-stacks li {
+    list-style-type: none;
+    font-size: 40px;
+}
+.all-stacks ul {
+    padding: 0px;
+}
+
+.backend-end-skills{ margin-left: 200px;}
+
+.longer{
+    height: 100vh;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    .about-desc{
+        font-size: 20px;
+        width: 100%;
+    }
+    #heading{
+        font-size: 120px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    .all-stacks li {
+        font-size: 20px;
+    }
+    .about-desc{
+        left: 0px;
+    }
+    .backend-end-skills{ margin-left: 60px;}
+
+}
