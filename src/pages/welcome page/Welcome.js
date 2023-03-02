@@ -1,6 +1,5 @@
 import React from 'react';
 import './Welcome.css';
-import '../pages.css';
 
 const Welcome = () => {
   return (
@@ -8,7 +7,7 @@ const Welcome = () => {
         <div className='center'>
           <span className='font'>Aditya Vishwakarma</span>
           <div>
-            <p className='about'>I am <b>Web designer</b> and <b>Front End developer</b></p>
+            <p className='about'>I am Web designer and Front End developer</p>
           </div>
         </div>
     </section>

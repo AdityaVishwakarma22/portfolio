@@ -2,6 +2,7 @@ import React from "react";
 import "aos/dist/aos.css";
 import "./About.css";
 import AOS from 'aos';
+import myPhoto from '../../assest/myPhoto.jpg';
 
 
 const About = () => {
@@ -11,9 +12,9 @@ const About = () => {
   });
 
   return (
-    <section id="about">
+    <section id="about" className="container">
 
-      <div className="section">
+      <div className="about-header">
         <div data-aos="fade-right" data-aos-mirror="true" id="heading"><b>About</b></div>
         <div className="about-desc">
           <p>
@@ -22,8 +23,7 @@ const About = () => {
           </p>
         </div>
       </div>
-
-      <div className="section">
+      <div className="container">
         <span className="heading"><b>Technologies</b> I use</span>
         <div className="all-stacks">
           <div className="front-end-skills">
@@ -47,6 +47,7 @@ const About = () => {
             </ul>
           </div>
         </div>
+        <img src={myPhoto} alt="" className="my-photo"/>
       </div>
     </section>
   );

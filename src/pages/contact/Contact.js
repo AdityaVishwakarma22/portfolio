@@ -9,7 +9,6 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault()
 
-
     emailjs
       .sendForm('gmail', 'contact_form', form.current,'tsJrLKH_Fk2CfRugd')
       .then(
@@ -41,7 +40,7 @@ const Contact = () => {
         </div>
         <div className="sub-form">
           <label>Enter your message</label>
-          <textarea name="message"></textarea>
+          <textarea name="message" style={{height:"110px"}}></textarea>
         </div>
         <input type="submit" value="SEND" id="submit" />
       </form>

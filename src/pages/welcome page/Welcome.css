@@ -3,7 +3,8 @@
 
 .welcome{
     position: relative;
-    height: calc(100vh);
+    height: calc(100vh + 59.2px);
+    top: -59.2px;
 }
 
 .font{
@@ -12,8 +13,10 @@
 }
 
 .about{
-    font-size: 50px;
-    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    padding-top: 20px;
+    font-size: 25px;
+    /* font-family: 'Alumni Sans Pinstripe', sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
 }
 

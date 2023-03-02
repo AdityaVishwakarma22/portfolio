@@ -1,9 +1,17 @@
-.App{
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.website-wrapper{
     padding: 0 200px;
 }
 
 @media screen and (max-width: 480px) and (min-width: 320px) {
     .App{
         padding: 0 10px;
+    }
+    .website-wrapper{
+        padding: 0 24px;
     }
 }

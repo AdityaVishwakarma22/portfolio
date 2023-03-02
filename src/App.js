@@ -7,13 +7,15 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div>
       <Navbar />
-      <Welcome />
-      <About />
-      <Projects />
+      <div className="website-wrapper">
+        <Welcome />
+        <About />
+        <Projects />
+      </div>
       <Contact />
-    </>
+    </div>
   );
 }
 
