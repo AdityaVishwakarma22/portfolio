@@ -1,0 +1,23 @@
+.wrapper {
+  padding: 100px 250px;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .wrapper {
+    margin: 24px;
+    padding: 100px 0px;
+  }
+  .card-image {
+    width: calc(100% - 60px);
+    height: auto;
+  }
+  .contactbackground {
+    padding: 0 24px 24px;
+  }
+  .experience-container {
+    margin-top: 200px;
+  }
+}
