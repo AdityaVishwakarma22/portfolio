@@ -6,7 +6,6 @@ import Contactpage from "./pages/Contact";
 import Tabs from "./components/Tabs";
 import { useEffect, useState } from "react";
 import { SKILLS } from "./components/data";
-// import photo from "./assets/my photo.jpeg";
 
 function App() {
   const [skill, setSkill] = useState("frontend");
@@ -38,7 +37,12 @@ function App() {
         <div className="nav-header">
           <div className="name-logo">Aditya Vishwakarma</div>
         </div>
-        <button className="button">Resume</button>
+        <a
+          href="https://docs.google.com/document/d/1EwbJ99iGaX8SYEZD7hIsLlrNNBDMJ_98t2HvJLZ6Ru8/edit?usp=sharing"
+          target="_blank"
+        >
+          <button className="button">Resume</button>
+        </a>{" "}
       </nav>
       <section className="landing-page container ">
         <div className="text-heading">
