@@ -162,7 +162,10 @@ button:hover,
 .helper {
   color: darkgrey;
 }
-
+/* Contact */
+.contactbackground {
+  height: 100vh;
+}
 @media (max-width: 767px) {
   * {
     font-size: medium;

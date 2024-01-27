@@ -12,16 +12,11 @@ function Experience() {
           <ul className="responsibilities-list">
             <li>
               Employed DOM manipulation techniques to enhance the user
-              experience of existing websites
+              experience
             </li>
             <li>
               Developed pixel-perfect designs based on provided Figma designs,
               ensuring adherence to UI/UX guidelines.
-            </li>
-            <li>
-              {" "}
-              Actively collaborated with team members using Git for version
-              control and efficient code collaboration.
             </li>
             <li>
               {" "}
@@ -37,11 +32,7 @@ function Experience() {
             <span className="button">Jul 2022 - Nov 2022</span>{" "}
           </h2>
           <ul className="responsibilities-list">
-            <li>Collaborated with a team of 5 members.</li>
-            <li>
-              Learnt and used agile software development frameworks, e.g.,
-              SCRUM.
-            </li>
+            <li>Used agile software development frameworks, e.g., SCRUM.</li>
             <li> Integrated React.js plugins, lifecycle methods and hooks</li>
             <li>Built responsive and cross platform website.</li>
             <li>
