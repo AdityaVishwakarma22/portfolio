@@ -15,7 +15,8 @@
     height: auto;
   }
   .contactbackground {
-    padding: 0 24px 24px;
+    padding: 0;
+    height: calc(100vh - 90px);
   }
   .experience-container {
     margin-top: 200px;

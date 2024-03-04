@@ -7,7 +7,7 @@ function Experience() {
         <h1 className="section-heading">Experience</h1>
         <div className="experience-info">
           <h2 className="exp-heading">
-            Optiphoenix <span className="button">Sept 2023 - Present</span>{" "}
+            Optiphoenix <span className="button">Sept 2023 - Jan 2024</span>{" "}
           </h2>
           <ul className="responsibilities-list">
             <li>
