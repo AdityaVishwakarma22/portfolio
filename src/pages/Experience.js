@@ -5,27 +5,7 @@ function Experience() {
     <>
       <section className="experience-container wrapper">
         <h1 className="section-heading">Experience</h1>
-        <div className="experience-info">
-          <h2 className="exp-heading">
-            Optiphoenix <span className="button">Sept 2023 - Jan 2024</span>{" "}
-          </h2>
-          <ul className="responsibilities-list">
-            <li>
-              Employed DOM manipulation techniques to enhance the user
-              experience
-            </li>
-            <li>
-              Developed pixel-perfect designs based on provided Figma designs,
-              ensuring adherence to UI/UX guidelines.
-            </li>
-            <li>
-              {" "}
-              Performed unit testing of developed software components before
-              releasing it into production environment thus avoiding any
-              potential bugs from reaching customers' hands.
-            </li>
-          </ul>
-        </div>
+
         <div className="experience-info">
           <h2 className="exp-heading">
             Freshdigital ( Intern ){" "}
