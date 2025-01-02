@@ -6,14 +6,13 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
-import { SplitText } from "gsap-trial/all";
-import SplitType, { TargetElement } from "split-type";
+import SplitType from "split-type";
 const Project = () => {
   const container = useRef<HTMLElement | any>(null);
 
   if (typeof window !== "undefined") {
     gsap.registerPlugin(useGSAP);
-    gsap.registerPlugin(SplitText, ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
   }
 
   useGSAP(
