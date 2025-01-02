@@ -4,10 +4,10 @@ import style from "./project.module.css";
 import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import SplitText from "gsap-trial/SplitText";
 import { useRef } from "react";
-import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
-
+import { ScrollTrigger } from "gsap/all";
+import { SplitText } from "gsap-trial/all";
+import SplitType, { TargetElement } from "split-type";
 const Project = () => {
   const container = useRef<HTMLElement | any>(null);
 
@@ -18,7 +18,8 @@ const Project = () => {
 
   useGSAP(
     () => {
-      var split = new SplitText("#pro", { type: "chars" });
+      const proElement = document.getElementById("pro") as HTMLElement;
+      const split = new SplitType(proElement, { types: "chars" });
       gsap.from(split.chars, {
         scrollTrigger: {
           trigger: "#pro",
