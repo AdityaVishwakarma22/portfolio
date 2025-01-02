@@ -1,5 +1,5 @@
 import "@/app/ui/global.css";
-import { inter } from "./lib/fonts";
+import { poppin } from "./lib/fonts";
 
 export default function RootLayout({
   children,
@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${poppin.className} antialiased`}>{children}</body>
     </html>
   );
 }
