@@ -4,7 +4,7 @@ import style from "./project.module.css";
 import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/all";
 import SplitType from "split-type";
 
@@ -34,25 +34,27 @@ const Project = () => {
     { scope: container }
   );
 
-  let proxy = { skew: 0 },
-    skewSetter = gsap.quickSetter("#skewElem", "skewY", "deg"), // fast
-    clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees.
+  useEffect(() => {
+    let proxy = { skew: 0 },
+      skewSetter = gsap.quickSetter("#skewElem", "skewY", "deg"),
+      clamp = gsap.utils.clamp(-20, 20);
 
-  ScrollTrigger.create({
-    onUpdate: (self) => {
-      let skew = clamp(self.getVelocity() / -300);
-      if (Math.abs(skew) > Math.abs(proxy.skew)) {
-        proxy.skew = skew;
-        gsap.to(proxy, {
-          skew: 0,
-          duration: 0.8,
-          ease: "power3",
-          overwrite: true,
-          onUpdate: () => skewSetter(proxy.skew),
-        });
-      }
-    },
-  });
+    ScrollTrigger.create({
+      onUpdate: (self) => {
+        let skew = clamp(self.getVelocity() / -300);
+        if (Math.abs(skew) > Math.abs(proxy.skew)) {
+          proxy.skew = skew;
+          gsap.to(proxy, {
+            skew: 0,
+            duration: 0.8,
+            ease: "power3",
+            overwrite: true,
+            onUpdate: () => skewSetter(proxy.skew),
+          });
+        }
+      },
+    });
+  }, []);
 
   return (
     <div className="section">
