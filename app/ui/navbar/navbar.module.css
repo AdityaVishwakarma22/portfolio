@@ -12,6 +12,7 @@
   box-shadow: 5px 3px 16px 0px #cbcbcb;
   background-color: white;
   transition: 1s;
+  z-index: 1;
 }
 
 .logo {
@@ -29,14 +30,14 @@
   margin: 10px 0px;
 }
 
-.navbar_links li {
+.navbar_links li div {
   padding: 10px 20px;
   text-align: center;
   border-radius: 6px;
   transition: 0.3s;
 }
 
-.navbar_links li:hover {
+.navbar_links li div:hover {
   background-color: black;
   color: white;
   cursor: pointer;
@@ -45,10 +46,16 @@
 @media screen and (max-width: 990px) {
   .navbar {
     width: unset;
-    left: calc(50% - 453px / 2);
+    left: calc(50% - 505px / 2);
   }
 
   .navbar_links {
     gap: 5px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .navbar {
+    display: none;
   }
 }

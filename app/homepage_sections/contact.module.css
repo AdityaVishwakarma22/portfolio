@@ -1,3 +1,21 @@
+.contact_section {
+  margin: 100px auto;
+}
+
+.heading_container {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  font-size: 60px;
+  font-family: "Poppins", serif;
+  margin: 0;
+  font-style: normal;
+}
+
 .btn_schedule {
   padding: 10px 20px;
   text-align: center;
@@ -11,4 +29,25 @@
   background-color: black;
   color: white;
   cursor: pointer;
+}
+
+.interview_wrapper {
+  margin-top: 20px;
+}
+.interview_wrapper button {
+  margin: 10px 0;
+  display: block;
+}
+
+.heading_container {
+  overflow: "hidden";
+}
+
+@media screen and (max-width: 450px) {
+  .interview_wrapper {
+    margin-top: 20px;
+  }
+  .interview_wrapper button {
+    margin: 10px 0;
+  }
 }

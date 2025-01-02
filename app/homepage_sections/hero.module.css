@@ -16,3 +16,17 @@
   margin: 0;
   font-style: normal;
 }
+
+@media screen and (max-width: 540px) {
+  .section {
+    align-items: start;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .heading {
+    font-size: 35px;
+  }
+}

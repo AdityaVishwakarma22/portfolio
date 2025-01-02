@@ -37,7 +37,26 @@
   cursor: pointer;
 }
 
+.cardLinks a {
+  color: black;
+}
+
 .projectImg {
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 450px) {
+  .heading {
+    font-size: 35px;
+  }
+  .card {
+    margin: 50px 0;
+  }
+  .cardHeader {
+    display: block;
+  }
+  .cardLinks {
+    text-decoration: underline;
+  }
 }
