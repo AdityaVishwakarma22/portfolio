@@ -1,0 +1,14 @@
+.btn_schedule {
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 6px;
+  transition: all 0.3s;
+  border: none;
+  margin-left: 20px;
+}
+
+.btn_schedule:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
