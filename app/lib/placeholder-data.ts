@@ -10,8 +10,8 @@ const revenue = [
     projectImg: nashtaaz,
   },
   {
-    name: "User List",
-    desc: "With help of session storage, the data entry is persisted of entered entry which can be edited and deleted. Using 'Add Contact' we can create contact details as required.",
+    name: "Sumpork",
+    desc: "With help of session storage & hooks, the contact info is stored which can be edited and deleted. Using 'Add Contact' we can create contact details as required.",
     git: "https://github.com/AdityaVishwakarma22/userDetail",
     live: "https://adityavishwakarma22.github.io/userDetail/",
     projectImg: todoss,

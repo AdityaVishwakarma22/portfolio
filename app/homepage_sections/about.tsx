@@ -43,10 +43,10 @@ const About = () => {
       <section>
         <h3>A Glimpse Into My World</h3>
         <p>
-          I first wrap my work ASAP only then I continue with improving myself
-          and pursuing my hobby.
-          <br /> My hobby is understanding how the world works, running,
-          currently trying best to get a body which is appealing to eyes
+          I prioritize my work allowing me to dedicate time to personal growth
+          and pursue my passions outside of work
+          <br /> I like developing clean + beautiful interactions on websites,
+          currently building usable ecommerce website
         </p>
       </section>
       <section>
@@ -61,15 +61,15 @@ const About = () => {
         <h3>Skills</h3>
         <div className="skills">
           <b>Frontend : </b>
-          <span>HTML5, CSS3, React.js, TypeScript, Figma</span>
+          <span>HTML5, CSS3, React.js, TypeScript, REST API, Figma</span>
         </div>
         <div className="skills">
           <b>Backend : </b>
-          <span>Node.js, Express.js, MongoDB, Mongoose, Postman</span>
+          <span>Node.js, Express.js, MongoDB, Postman</span>
         </div>
         <div className="skills">
           <b>Others : </b>
-          <span>Github, SCRUM, AGILE, Microsoft suite</span>
+          <span>Github, SCRUM, AGILE</span>
         </div>
       </section>
     </div>

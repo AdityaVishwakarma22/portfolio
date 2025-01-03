@@ -67,6 +67,10 @@ const Contact = () => {
         <b>Call me at : </b>
         <span> +91 9306504386</span>
       </div>
+      <div>
+        <b>Email : </b>
+        <span> 22avkvishwakarma22@gmail.com</span>
+      </div>
       <div className={style.interview_wrapper}>
         <b>Schedule interview : </b>
         <span> An email will be shared upon scheduling the call</span>

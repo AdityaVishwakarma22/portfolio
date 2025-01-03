@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className={style.navbar}>
       <Link to="home" smooth={true} duration={500} offset={-100}>
         <motion.div className={style.logo} whileTap={{ scale: 0.5 }}>
-          <Image src={logo} alt="" className={style.logo} /> Web dev / designer
+          <Image src={logo} alt="" className={style.logo} /> Aditya
         </motion.div>
       </Link>
 

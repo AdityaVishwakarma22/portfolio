@@ -4,6 +4,23 @@
   overflow: hidden;
 }
 
+.design_card {
+  display: flex;
+  background-color: rgb(245, 242, 237);
+  margin: 100px 0;
+  border-radius: 20px;
+  box-shadow: 5px 3px 16px 0px #cbcbcb;
+  height: 500px;
+  overflow: hidden;
+}
+
+.design_card > div:first-child {
+  padding: 20px 40px;
+}
+.design_card > div {
+  width: 50%;
+}
+
 .heading {
   font-size: 60px;
   font-family: "Poppins", serif;
@@ -25,6 +42,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.design_links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: blue;
 }
 
 .cardLinks {
@@ -50,7 +74,8 @@
   .heading {
     font-size: 35px;
   }
-  .card {
+  .card,
+  .design_card {
     margin: 50px 0;
   }
   .cardHeader {
@@ -58,5 +83,11 @@
   }
   .cardLinks {
     text-decoration: underline;
+  }
+  .design_card {
+    display: block;
+  }
+  .design_card div:first-child {
+    width: 100%;
   }
 }

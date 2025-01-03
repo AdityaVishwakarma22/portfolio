@@ -18,6 +18,8 @@
 .logo {
   height: 50px;
   width: auto;
+  display: flex;
+  align-items: center;
 }
 .logo:hover {
   cursor: pointer;
