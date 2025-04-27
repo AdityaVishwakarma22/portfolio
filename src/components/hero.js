@@ -12,7 +12,7 @@ const Hero = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 0.75 }}
         >
-          Web developer & designer since <br /> <b>2 years</b>
+          Web developer & QA tester since <br /> <b>1 years</b>
         </motion.h2>
         <motion.i
           initial={{ opacity: 0 }}
