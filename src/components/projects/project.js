@@ -3,11 +3,13 @@ import { revenue } from "../../data";
 import style from "./project.module.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 import SplitType from "split-type";
 import design from "../../images/design.gif";
 import { LuLink2 } from "react-icons/lu";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 
 const Project = () => {
   const container = useRef(null);
@@ -35,27 +37,27 @@ const Project = () => {
     { scope: container },
   );
 
-  useEffect(() => {
-    let proxy = { skew: 0 },
-      skewSetter = gsap.quickSetter("#skewElem", "skewY", "deg"),
-      clamp = gsap.utils.clamp(-20, 20);
+  // useEffect(() => {
+  //   let proxy = { skew: 0 },
+  //     skewSetter = gsap.quickSetter("#skewElem", "skewY", "deg"),
+  //     clamp = gsap.utils.clamp(-20, 20);
 
-    ScrollTrigger.create({
-      onUpdate: (self) => {
-        let skew = clamp(self.getVelocity() / -300);
-        if (Math.abs(skew) > Math.abs(proxy.skew)) {
-          proxy.skew = skew;
-          gsap.to(proxy, {
-            skew: 0,
-            duration: 0.8,
-            ease: "power3",
-            overwrite: true,
-            onUpdate: () => skewSetter(proxy.skew),
-          });
-        }
-      },
-    });
-  }, []);
+  //   ScrollTrigger.create({
+  //     onUpdate: (self) => {
+  //       let skew = clamp(self.getVelocity() / -300);
+  //       if (Math.abs(skew) > Math.abs(proxy.skew)) {
+  //         proxy.skew = skew;
+  //         gsap.to(proxy, {
+  //           skew: 0,
+  //           duration: 0.8,
+  //           ease: "power3",
+  //           overwrite: true,
+  //           onUpdate: () => skewSetter(proxy.skew),
+  //         });
+  //       }
+  //     },
+  //   });
+  // }, []);
 
   return (
     <div className="section" id="projects">
@@ -68,14 +70,20 @@ const Project = () => {
         {revenue.map((e, index) => (
           <div key={index} className={style.card}>
             <div className={style.cardHeader}>
-              <h2>{e.name} - Coding project</h2>
+              <h2>
+                {e.name}{" "}
+                <FontAwesomeIcon
+                  icon={faSquareArrowUpRight}
+                  style={{ marginLeft: "10px" }}
+                />
+              </h2>
 
               <div className={style.cardLinks}>
                 <a href={`${e.git}`} target="_blank">
                   <i>Code</i>
                 </a>
                 <a href={`${e.live}`} target="_blank">
-                  <i>Live</i>
+                  <i>Demo</i>
                 </a>
               </div>
             </div>

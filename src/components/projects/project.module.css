@@ -44,6 +44,14 @@
   align-items: center;
 }
 
+.cardHeader h2 {
+  margin-bottom: 0px;
+}
+
+.cardHeader h2:hover {
+  cursor: pointer;
+}
+
 .design_links {
   display: flex;
   align-items: center;
@@ -68,6 +76,7 @@
 .projectImg {
   width: 100%;
   height: auto;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 450px) {

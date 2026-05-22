@@ -28,7 +28,7 @@ const About = () => {
         stagger: 0.05,
       });
     },
-    { scope: container }
+    { scope: container },
   );
   return (
     <div className="section" id="about">
@@ -43,32 +43,44 @@ const About = () => {
         <p>
           I prioritize my work allowing me to dedicate time to personal growth
           and pursue my passions outside of work
-          <br /> I like developing clean + beautiful interactions on websites,
-          currently building usable ecommerce website
-        </p>
-      </section>
-      <section>
-        <h3>Experience</h3>
-        <p>
-          Graduated in Bachelors of Technology - Computer Science in 2022.
-          Worked in 2 start-ups - 1st as an intern (5 months) and in 2nd as a
-          full-time employee (1 year).
+          <br /> I like developing clean & beautiful interactions on websites.
         </p>
       </section>
       <section>
         <h3>Skills</h3>
         <div className="skills">
           <b>Frontend : </b>
-          <span>HTML5, CSS3, React.js, TypeScript, REST API, Figma</span>
+          <span>
+            HTML5, CSS3,React.js, Next.js, JavaScript, TypeScript, HTML/CSS,
+            Bootstrap, Redux Toolkit, Tailwind
+          </span>
         </div>
         <div className="skills">
           <b>Backend : </b>
-          <span>Node.js, Express.js, MongoDB, Postman</span>
+          <span>
+            Node.js, Next.js API routes, Express.js, Authentication (JWT, OAuth,
+            NextAuth ), Prisma
+          </span>
         </div>
         <div className="skills">
-          <b>Others : </b>
-          <span>Github, SCRUM, AGILE</span>
+          <b>Database : </b>
+          <span>MongoDB, MongoDB Compass, PostgreSQL</span>
         </div>
+        <div className="skills">
+          <b>DevOps & Tools : </b>
+          <span>
+            Git, GitHub Actions, CI/CD Pipelines, Postman, Playwright, AWS (EC2,
+            S3){" "}
+          </span>
+        </div>
+      </section>
+      <section>
+        <h3>Experience</h3>
+        <p>
+          Graduated in Bachelors of Technology - Computer Science in 2022.
+          Worked in 2 start-ups - 1st as a Frontend intern (5 months) and in 2nd
+          as a Fullstack developer. full-time employee (3+ year).
+        </p>
       </section>
     </div>
   );
