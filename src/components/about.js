@@ -41,9 +41,11 @@ const About = () => {
       <section>
         <h3>A Glimpse Into My World</h3>
         <p>
-          I prioritize my work allowing me to dedicate time to personal growth
-          and pursue my passions outside of work
-          <br /> I like developing clean & beautiful interactions on websites.
+          I like building things that people actually use.
+          <br />
+          From MVPs to production systems, I work across the stack to turn ideas
+          into fast, scalable, and polished products. I thrive in fast-moving
+          environments where rapid iteration, ownership, and execution matter.
         </p>
       </section>
       <section>
@@ -77,9 +79,10 @@ const About = () => {
       <section>
         <h3>Experience</h3>
         <p>
-          Graduated in Bachelors of Technology - Computer Science in 2022.
-          Worked in 2 start-ups - 1st as a Frontend intern (5 months) and in 2nd
-          as a Fullstack developer. full-time employee (3+ year).
+          B.Tech in Computer Science (2022). <br />
+          Worked with 2 startups — started as a Frontend Intern and currently
+          working as a Full-Stack Developer with 3+ years of professional
+          experience building scalable web products.
         </p>
       </section>
     </div>

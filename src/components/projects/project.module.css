@@ -46,6 +46,11 @@
 
 .cardHeader h2 {
   margin-bottom: 0px;
+  color: purple;
+}
+
+.design_card .cardHeader h2 {
+  margin-bottom: 20px;
 }
 
 .cardHeader h2:hover {
@@ -71,6 +76,14 @@
 
 .cardLinks a {
   color: black;
+}
+
+.textAbout {
+  display: flex;
+}
+.textAbout p {
+  width: 50%;
+  padding-right: 20px;
 }
 
 .projectImg {

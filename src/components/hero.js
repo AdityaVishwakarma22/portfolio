@@ -17,7 +17,8 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 0.75 }}>
-          Clean Design. Big Impact.
+          {/* Clean Design. Big Impact. */}
+          Immediate Joiner!
         </motion.i>
       </div>
       <div className={s.hero_vid}>

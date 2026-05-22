@@ -37,63 +37,48 @@ const Project = () => {
     { scope: container },
   );
 
-  // useEffect(() => {
-  //   let proxy = { skew: 0 },
-  //     skewSetter = gsap.quickSetter("#skewElem", "skewY", "deg"),
-  //     clamp = gsap.utils.clamp(-20, 20);
-
-  //   ScrollTrigger.create({
-  //     onUpdate: (self) => {
-  //       let skew = clamp(self.getVelocity() / -300);
-  //       if (Math.abs(skew) > Math.abs(proxy.skew)) {
-  //         proxy.skew = skew;
-  //         gsap.to(proxy, {
-  //           skew: 0,
-  //           duration: 0.8,
-  //           ease: "power3",
-  //           overwrite: true,
-  //           onUpdate: () => skewSetter(proxy.skew),
-  //         });
-  //       }
-  //     },
-  //   });
-  // }, []);
-
   return (
     <div className="section" id="projects">
       <div className={style.heading_container} ref={container}>
         <h1 className={style.heading} id="pro">
-          Personal projects
+          Projects
         </h1>
       </div>
       <div id="skewElem">
         {revenue.map((e, index) => (
           <div key={index} className={style.card}>
             <div className={style.cardHeader}>
-              <h2>
-                {e.name}{" "}
-                <FontAwesomeIcon
-                  icon={faSquareArrowUpRight}
-                  style={{ marginLeft: "10px" }}
-                />
-              </h2>
+              <a href={`${e.live}`} target="_blank" rel="noreferrer">
+                <h2>
+                  {e.name}{" "}
+                  <FontAwesomeIcon
+                    icon={faSquareArrowUpRight}
+                    style={{ marginLeft: "10px" }}
+                  />
+                </h2>
+              </a>
 
               <div className={style.cardLinks}>
-                <a href={`${e.git}`} target="_blank">
+                <a href={`${e.git}`} target="_blank" rel="noreferrer">
                   <i>Code</i>
                 </a>
-                <a href={`${e.live}`} target="_blank">
+                <a href={`${e.live}`} target="_blank" rel="noreferrer">
                   <i>Demo</i>
                 </a>
               </div>
             </div>
             <div className={style.projectImgContainer}>
-              <ul>
-                {e.desc.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
-              <img src={e.projectImg} alt="" className={style.projectImg} />
+              <div className={style.textAbout}>
+                <p>{e.about}</p>
+                <ul>
+                  {e.desc.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <a href={`${e.live}`} target="_blank" rel="noreferrer">
+                <img src={e.projectImg} alt="" className={style.projectImg} />
+              </a>
             </div>
           </div>
         ))}
@@ -106,7 +91,8 @@ const Project = () => {
               <a
                 href="https://www.figma.com/design/jsCEeZx07LzVyVMM1wAKRu/Firely?node-id=0-1&t=pFjTtjTaIJzO3wFM-1"
                 target="_blank"
-                className={style.design_links}>
+                className={style.design_links}
+                rel="noreferrer">
                 Firely
                 <LuLink2 size={20} />
               </a>
@@ -116,7 +102,8 @@ const Project = () => {
               <a
                 href="https://www.figma.com/design/SVwV4VDLxa087cko3lWVAf/Indian-Wedding-Planning-App?node-id=0-1&t=WnaZClrHrhlwfy5f-1"
                 target="_blank"
-                className={style.design_links}>
+                className={style.design_links}
+                rel="noreferrer">
                 Weeding App
                 <LuLink2 size={20} />
               </a>
@@ -126,7 +113,8 @@ const Project = () => {
               <a
                 href="https://www.figma.com/design/8SKok8FyyC0yJu6XF7nTLq/Redesign?node-id=416-3&t=5Ubzt8SndfUPFRGr-1"
                 target="_blank"
-                className={style.design_links}>
+                className={style.design_links}
+                rel="noreferrer">
                 Re-Design
                 <LuLink2 size={20} />
               </a>

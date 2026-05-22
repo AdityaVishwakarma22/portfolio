@@ -4,6 +4,8 @@ import todoss from "./images/todo.png";
 const revenue = [
   {
     name: "Dineflow",
+    about:
+      "An online food ordering application built with React and Firebase, featuring a dynamic cart system and real-time data management.",
     desc: [
       "React Context API for centralized cart state management",
       "Firebase integration for real-time data fetching",
@@ -17,6 +19,8 @@ const revenue = [
   },
   {
     name: "HRVerse",
+    about:
+      "A user-friendly contact management application built with React, utilizing session storage for data persistence and offering features to add, edit, and delete contacts.",
     desc: [
       "Session storage integration for local data persistence",
       "React Hooks for state management",
