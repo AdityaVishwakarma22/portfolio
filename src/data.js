@@ -3,15 +3,28 @@ import todoss from "./images/todo.png";
 
 const revenue = [
   {
-    name: "Nashtaaz",
-    desc: "React based application implementing REST API, asynchornous calls and various hooks. Allowing user to order multiple food items and place order to it with their order data being stored. ",
+    name: "Dineflow",
+    desc: [
+      "React Context API for centralized cart state management",
+      "Firebase integration for real-time data fetching",
+      "Functional components with React Hooks",
+      "Dynamic cart and order workflows",
+      "Responsive UI architecture",
+      "Modular and reusable component design",
+      "Clean and maintainable codebase",
+    ],
     git: "https://github.com/AdityaVishwakarma22/Food-app",
     live: "https://adityavishwakarma22.github.io/Food-app/",
     projectImg: nashtaaz,
   },
   {
-    name: "Sumpork",
-    desc: "With help of session storage & hooks, the contact info is stored which can be edited and deleted. Using 'Add Contact' we can create contact details as required.",
+    name: "HRVerse",
+    desc: [
+      "Session storage integration for local data persistence",
+      "React Hooks for state management",
+      "Editable and deletable contact information",
+      "'Add Contact' functionality for creating new entries",
+    ],
     git: "https://github.com/AdityaVishwakarma22/userDetail",
     live: "https://adityavishwakarma22.github.io/userDetail/",
     projectImg: todoss,
